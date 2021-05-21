@@ -24,7 +24,7 @@ let package = Package(
     ),
     .target(
       name: "AppboyKit",
-      dependencies: ["SDWebImage", "AppboyKitLibrary"],
+      dependencies: ["AppboyKitLibrary"],
       path: "AppboyKit",
       resources: [
         .process("Appboy.bundle"),
@@ -44,7 +44,7 @@ let package = Package(
     ),
     .target(
       name: "AppboyUI",
-      dependencies: ["AppboyKit"],
+      dependencies: ["AppboyKit", "SDWebImage"],
       path: "AppboyUI",
       resources: [
         .process("ABKNewsFeed/Resources"),
